@@ -1,0 +1,104 @@
+#navbar {
+    overflow: auto;
+    background-color: #00003d;
+    width: 100%;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    width: 20%;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    background-color: #d9d9d9;
+    color: #00003d
+}
+
+#navbar a.active {
+    background-color: #d9d9d9;
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    #navbar a {
+        float:none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.content{
+    padding-top: 1em;
+}
+
+.sticky + .content {
+    padding-top: 1.5em;
+  }
+
+.header {
+    font-size: 1.75em;
+    color: #00003d;
+    margin-left: 20%;
+    padding-top: 0.2em;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 0.2em;
+}
+
+p {
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 0.2em;
+}
+
+.clientHeader {
+    color: #00003d;
+    font-size: 1.25em;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 0.2em;
+}
+
+.strategic {
+    color: #00003d;
+    font-size: 1.25em;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 0.2em;
+}
+
+tr,td {
+    padding: 0.75em;
+}
+
+.roles{
+    padding: 0.25em;
+}
+
+.roleTable {
+    margin-left: 20%;
+}
+
+.servicesTable {
+    margin-left: 20%;
+}
