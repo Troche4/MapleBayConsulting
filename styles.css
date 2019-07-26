@@ -1,3 +1,14 @@
+.heroImage {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)), 
+            url("photographer.jpg");
+}
+
+.logo {
+    padding: 1%;
+}
+
 #navbar {
     overflow: auto;
     background-color: #00003d;
@@ -100,5 +111,25 @@ tr,td {
 }
 
 .servicesTable {
+    margin-left: 20%;
+}
+
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.mapKey {
+    color: black;
+    font-size: 0.5em;
+}
+
+.teamElements {
+    margin-left: 20%;
+}
+
+.strategyElements {
     margin-left: 20%;
 }
