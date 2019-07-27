@@ -37,6 +37,7 @@
     overflow: auto;
     background-color: #00003d;
     width: 100%;
+    float: right;
 }
 
 #navbar a {
@@ -91,26 +92,26 @@
     padding-bottom: 0;
 }
 
-footer {
-    font-size: 1.25em;
-    background-color:#00003d;
-    padding-top: 0.2em;
-    
+#footer a {
+    float: left;
+    display: block;
+    background-color:#00003d; 
+    color: #f2f2f2;
+    text-align: center;
+    padding-bottom: 0.75em;
+    padding-top: 0.75em;
+    width: 33.33%;
 }
 
-.footerStyle{
-    font-size: 1.25em;
-    color: white;
+@media screen and (max-width: 500px) {
+    #footer a {
+        float:none;
+        display: block;
+        width: 100%;
+        text-align: left; 
+    }
 }
 
-.footerRow{
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.footerElement{
-    width: 20%;
-}
 
 p {
     margin-left: 20%;
