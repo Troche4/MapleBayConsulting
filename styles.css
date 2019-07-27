@@ -17,7 +17,7 @@
 .heroText{
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -29,6 +29,8 @@
 
 .logo {
     padding: 1%;
+    margin-left: 4%;
+    margin-right: 10%
 }
 
 #navbar {
@@ -86,19 +88,31 @@
     color: #00003d;
     margin-left: 20%;
     padding-top: 0.2em;
+    padding-bottom: 0;
 }
 
-.footer {
-    text-align: center;
+footer {
+    font-size: 1.25em;
+    background-color:#00003d;
+    padding-top: 0.2em;
+    
+}
+
+.footerStyle{
     font-size: 1.25em;
     color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 0.2em;
+}
+
+.footerRow{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.footerElement{
+    width: 20%;
 }
 
 p {
-    color: black;
     margin-left: 20%;
     margin-right: 20%;
     padding-top: 0.2em;
@@ -120,7 +134,7 @@ p {
     padding-top: 0.2em;
 }
 
-tr,td {
+.servicesTable tr,td {
     padding: 0.75em;
 }
 
