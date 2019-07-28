@@ -29,15 +29,15 @@
 }
 
 .logo {
-    padding: 1%;
+    padding: 3%;
     margin-left: 4%;
     margin-right: 10%
 }
 
 .searchBarWrapper {
     position: absolute;
-    top: 27%;
-    left: 50%;
+    top: 35%;
+    left: 35%;
 }
 
 .searchBar{

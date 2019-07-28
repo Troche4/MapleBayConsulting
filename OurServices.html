@@ -27,10 +27,20 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<a href="Welcome.html">
-  <img class=logo src=Logo.jpeg>
-</a>
-
+<div class=row>
+  <div class=col>
+    <a href="Welcome.html">
+      <img class=logo src=Logo.jpeg>
+    </a>
+  </div>
+  <div class=col>
+    <div class=searchBarWrapper>
+      <form action="searcher.php">
+        <input class=searchBar type="text" placeholder="Search..."><button type='submit'>&#x1F50D<i class="fa fa-serach"></i></button>
+      </form>
+    </div>
+  </div>
+</div>
 <body>
   <div id=navbar>
     <a href="Homepage.html">Overview</a>
