@@ -33,6 +33,27 @@
     margin-right: 10%
 }
 
+.searchBarWrapper {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+}
+
+.searchBar{
+    width: 60%;
+}
+
+.searchBar, form{
+    display: inline-block;
+}
+
+@media screen and (max-width: 550px) {
+    .searchBarWrapper, .searchBar, form {
+        display: none;
+    }
+}
+
+
 #navbar {
     overflow: auto;
     background-color: #00003d;
