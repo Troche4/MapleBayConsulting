@@ -192,3 +192,11 @@ p {
 .strategyElements {
     margin-left: 20%;
 }
+
+#questionnaire{
+    margin-left: 10%;
+}
+
+#questionnaire input{
+    margin-left: 25%
+}
