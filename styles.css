@@ -36,19 +36,19 @@
 
 .searchBarWrapper {
     position: absolute;
-    top: 35%;
-    left: 35%;
+    top: 39%;
+    right: 10%;
 }
 
-.searchBar{
-    width: 60%;
+.searchBar {
+    font-size: 1.1em;
 }
 
 .searchBar, form{
     display: inline-block;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     .searchBarWrapper, .searchBar, form {
         display: none;
     }
@@ -173,6 +173,10 @@ p {
     margin-left: 20%;
 }
 
+#clientLocationsMap{
+    display: inline-block;
+}
+
 .map {
     display: block;
     margin-left: auto;
@@ -194,9 +198,10 @@ p {
 }
 
 #questionnaire{
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 #questionnaire input{
     margin-left: 25%
 }
+
