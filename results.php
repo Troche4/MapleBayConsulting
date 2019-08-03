@@ -46,6 +46,9 @@
     <a href="OurServices.html">Our Services</a>
     <a href="ContactUs.html">Contact Us</a>
   </div>
+  <div class="header">
+    Submission confirmed
+  </div>
   <script>
     window.onscroll = function () { myFunction() };
     var navbar = document.getElementById("navbar");
@@ -63,8 +66,8 @@
 
 
 <?php
-    $MBCMail = "roche.trey@gmail.com"
-    $MBCSubject = "Strategic Questionnaire Results: " .$_POST['name'] ." from" .$_POST['org';]
+    $MBCMail = "roche.trey@gmail.com";
+    $MBCSubject = "Strategic Questionnaire Results: " .$_POST['name'] ." from" .$_POST['org'];
     $clientSubject = "Maple Bay Consulting - Strategic Questionnaire results";
     $MBCMessage = "Hi Joe, \n\n Here are the strategic questionnaire results for " .$POST_['name'] ." with" .$POST_['org'] .":\n "
 
@@ -89,7 +92,7 @@
 
     if ($_POST['email'] == '') {
         echo "Hi ".$POST_['name'] ."!  We have recieved your submission. Thank you for taking the Strategic Questionnaire.";
-        mail($_POST['email'], $clientSubject, $clientMessage)
+        mail($_POST['email'], $clientSubject, $clientMessage);
     }
     else {
         echo "Hi ".$POST['name'] ."!  We have recieved your submission! Your results will be emailed to you at " .$email .".  Thank you for taking the Strategic Questionnaire.";
