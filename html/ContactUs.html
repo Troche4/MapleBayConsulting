@@ -18,16 +18,16 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<div class=row>
-  <div class=col>
+<div class="row">
+  <div class="col">
     <a href="Welcome.html">
-      <img class=logo src=Logo.jpeg>
+      <img class="logo" src="../images/Logo.jpeg">
     </a>
   </div>
-  <div class=col>
-    <div class=searchBarWrapper>
+  <div class="col">
+    <div class="searchBarWrapper">
       <form action="searcher.php">
-        <input class=searchBar type="text" placeholder="Search..."><button type='submit'>&#x1F50D<i
+        <input class="searchBar" type="text" placeholder="Search..."><button type='submit'>&#x1F50D<i
             class="fa fa-serach"></i></button>
       </form>
     </div>
@@ -35,7 +35,7 @@
 </div>
 
 <body>
-  <div id=navbar>
+  <div id="navbar">
     <a href="Overview.html">Overview</a>
     <a href="AboutUs.html">About Us</a>
     <a href="OurProcess.html">Our Process</a>
@@ -58,8 +58,8 @@
 
   <br><br>
 
-  <div class=content>
-    <div class=header id=ContactInformation>
+  <div class="content">
+    <div class="header" id="ContactInformation">
       Contact Information
     </div>
 
@@ -83,13 +83,15 @@
     </div>
 
 
-    <div class=header id=Webform>
+    <div class="header" id="Webform">
       Webform
     </div>
 
     <p>Please choose Yes or No for each question. Answer these questions honestly and with your first reaction. Do not
       ponder. We are looking for a gut level response. Some questions are similar or repeat for a reason. We are looking
-      to see what strategy or group of strategies to apply to your company.</p>
+      to see what strategy or group of strategies to apply to your company.
+    </p>
+
     <form id="questionnaire" action="results.php" method="POST">
       <p>Please enter your full name and the name of your organization.</p>
       <input id="quizOptions" type="text" name="name" placeholder="Name"><br><br>
@@ -104,8 +106,7 @@
       <input id="quizOptions" type="radio" name="q3" value="yes">Yes <br><br>
       <input id="quizOptions" type="radio" name="q3" value="yes">No <br><br>
       <p>4. Are there forces (social, legal, technical, regulatory, or demographic) over which you seem to have little
-        or
-        no control that are forming your destiny?</p>
+        or no control that are forming your destiny?</p>
       <input id="quizOptions" type="radio" name="q4" value="yes">Yes <br><br>
       <input id="quizOptions" type="radio" name="q4" value="yes">No <br><br>
       <p>5. Is there a scenario that quickly comes to mind where your organization grows exponentially?</p>
