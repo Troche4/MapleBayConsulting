@@ -15,7 +15,7 @@
   <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
 <div class="row">
@@ -27,18 +27,60 @@
   <div class="col">
     <div class="searchBarWrapper">
       <form action="searcher.php">
-        <input class="searchBar" type="text" placeholder="Search..."><button type='submit'>&#x1F50D<i class="fa fa-serach"></i></button>
+        <input class="searchBar" type="text" placeholder="Search..."><button type='submit'>&#x1F50D<i
+            class="fa fa-serach"></i></button>
       </form>
     </div>
   </div>
 </div>
+
 <body>
   <div id="navbar">
-    <a href="Overview.html">Overview</a>
-    <a href="AboutUs.html">About Us</a>
-    <a href="OurProcess.html">Our Process</a>
-    <a href="OurServices.html">Our Services</a>
-    <a href="ContactUs.html">Contact Us</a>
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="Overview.html">Overview</a>
+      <div class="dropContent">
+        <a href="Overview.html#WhoWeAre">Who We Are</a>
+        <a href="Overview.html#OurProcess">Our Process</a>
+        <a href="Overview.html#OurServices">Our Services</a>
+        <a href="Overview.html#OurClients">Our Clients</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="AboutUs.html">About Us</a>
+      <div class="dropContent">
+        <a href="AboutUs.html#CompanyOverview">Company Overview</a>
+        <a href="AboutUs.html#MissionAndVision">Mission and Vision</a>
+        <a href="AboutUs.html#JoesBioAndExperience">Joes Bio And Experience</a>
+        <a href="AboutUs.html#OurClients">Our Clients</a>
+        <a href="AboutUs.html#Testimonials">Testimonials</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="OurProcess.html">Our Process</a>
+      <div class="dropContent">
+        <a href="OurProcess.html#HowWeSpendOurTime">How We Spend Our Time</a>
+        <a href="OurProcess.html#ProcessInfographic">Process Visualization</a>
+        <a href="OurProcess.html#strategicPlanning">Strategic Planning</a>
+        <a href="OurProcess.html#GrowthAgenda">Growth Agenda</a>
+        <a href="OurProcess.html#FinancialTurnaround">Financial Turnaround</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="OurServices.html">Our Services</a>
+      <div class="dropContent">
+        <a href="OurServices.html#BusinessTransition">Business Transition</a>
+        <a href="OurServices.html#TalentDevelopment">Talent Development</a>
+        <a href="OurServices.html#TeamBuilding">Team Building</a>
+        <a href="OurServices.html#StrategicPlanning">Strategic Planning</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="ContactUs.html">Contact Us</a>
+      <div class="dropContent">
+        <a href="ContactUs.html#contactWrapper">Contact Information</a>
+        <a href="ContactUs.html#Webform">Strategic Questionnaire</a>
+      </div>
+    </div>
   </div>
 
   <script>
