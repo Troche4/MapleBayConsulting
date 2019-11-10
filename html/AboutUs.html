@@ -15,19 +15,20 @@
   <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" >
+  
 </head>
 
 <div class="row">
   <div class="col">
-    <a href="Welcome.html">
+    <a href="../Welcome.html">
       <img class="logo" src="../images/Logo.jpeg">
     </a>
   </div>
 </div>
 
 <body>
-  <div id="navbar">
+  <div class="navbar">
     <div class="dropdown">
       <a class="dropBtn" style="color:#f2f2f2;" href="Overview.html">Overview</a>
       <div class="dropContent">
@@ -70,7 +71,7 @@
       <a class="dropBtn" style="color:#f2f2f2;" href="ContactUs.html">Contact Us</a>
       <div class="dropContent">
         <a href="ContactUs.html">Contact Information</a>
-        <a href="ContactUs.html">Strategic Questionnaire</a>
+        <a href="ContactUs.html#Webform">Strategic Questionnaire</a>
       </div>
     </div>
   </div>
@@ -273,7 +274,7 @@
 
   <script>
     window.onscroll = function () { myFunction() };
-    var navbar = document.getElementById("navbar");
+    var navbar = document.getElementsByClassName("navbar")[0];
     var sticky = navbar.offsetTop;
     function myFunction() {
       if (window.pageYOffset >= (sticky + 10)) {
