@@ -15,7 +15,7 @@
   <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
 
 <div class="row">
@@ -95,7 +95,7 @@
 
 <?php
     $MBCMail = "roche.trey@gmail.com";
-    $MBCSubject = "Strategic Questionnaire Results: " .$_POST['name'] ." from" .$_POST['org'];
+    $MBCSubject = "Strategic Questionnaire Results: " .$_POST['name'] ." from " .$_POST['org'];
     $clientSubject = "Maple Bay Consulting - Strategic Questionnaire results";
     $MBCMessage = "Hi Joe, \n\nHere are the strategic questionnaire results for " .$_POST['name'] ." with " .$_POST['org'] .":\n\n"
 
@@ -125,7 +125,7 @@
 
     ."13. Do you know what your core competency is?\n\t" .$_POST['q13'] ."\n"
 
-    ."14. Is there something that you are best in the world at? " .$_POST['q14'] ."\n"
+    ."14. Is there something that you are best in the world at?\n\t" .$_POST['q14'] ."\n"
 
     ."15. Is there something in your business you are passionate about?\n\t" .$_POST['q15'] ."\n"
 
@@ -237,7 +237,7 @@
         echo "Hi ".$_POST['name'] ."!  We have recieved your submission. Thank you for taking the Strategic Questionnaire.";
     }
     else {
-        echo "Hi ".$POST['name'] ."!  We have recieved your submission! Your results will be emailed to you at " .$_POST['email'] .".  Thank you for taking the Strategic Questionnaire.";
+        echo "Hi ".$POST['name'] ."!  We have recieved your submission! Your results will be emailed to you at " .$_POST['clientEmail'] .".  Thank you for taking the Strategic Questionnaire.";
         mail($_POST['clientEmail'], $clientSubject, $clientMessage, "-f$maplebayconsulting@att.net");
     }
     mail($MBCMail, $MBCSubject, $MBCMessage);
