@@ -31,32 +31,15 @@
 .logo {
     padding: 3%;
     margin-left: 4%;
-    margin-right: 10%
-}
-
-@media screen and (min-width : 375px) and (max-width : 812px) and (-webkit-device-pixel-ratio : 3){
-    #footer a {
-        float:none;
-        display: block;
-        width: 100%;
-        text-align: left; 
-    }
-    p {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .navbar div{
-        display: none;
-        width:20%;
-    }
-    .dropdown:hover .dropContent{
-        display: block;
-    }
+    margin-right: 10%;
+    width: 35%;
+    padding-top: 5%;
 }
 
 .navbar{
     background-color: white;
     padding: 0%;
+    width: 100%;
 }
 
 .sticky {
@@ -76,7 +59,6 @@
 
 .dropdown{
     display: inline-block; 
-    position: relative;
     background-color:#00003d;
     text-align: center;
     padding-bottom: 0.5em;
@@ -86,7 +68,6 @@
 
 .dropBtn{
     display: block;
-    color: #f2f2f2;
     text-align: center;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
@@ -107,9 +88,9 @@
 .dropContent a{
     display: block;
     color: #f2f2f2;
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
     margin-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .dropdown:hover .dropContent{
@@ -213,4 +194,67 @@ figcaption{
     width: 20%;
     height: 20%;
     margin-left: 25%;
+}
+
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 812px) {
+    .heroText h1{
+        font-size: 4em;
+    }
+    .heroText h4{
+        font-size: 3em;
+    }
+    .navbar{
+        font-size: 2em;
+    }
+    .navbar a{
+        text-align: left;
+        margin-left: 10%;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .dropdown{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .header{
+        font-size: 3em;
+    }
+    p{
+        font-size: 2em;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    #footer a{
+        display: block;
+        width: 100%;
+        font-size: 2em;
+    }
+    .logo {
+        width: 60%
+    }
+    td{
+        font-size: 2em
+    }
+    .content a{
+        font-size: 2em;
+    }
+    #JoeWalker a{
+        font-size: 1em
+    }
+    #CharlotteWalker a{
+        font-size: 1em
+    }
+    #userInfo {
+        font-size: 2em;
+    }
+    .question{
+        font-size: 1.5em;
+    }
+    .question input{
+        height: 1.5em;
+        width: 1.5em;
+    }
 }
