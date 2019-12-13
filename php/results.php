@@ -246,8 +246,8 @@
 
 <html>
   <div id=footer>
-    <a href="" style=color:white;>Privacy Policy</a>
-    <a href="" style=color:white;>maplebayconsulting@att.net</a>
-    <a href="" style=color:white;>(248)-505-4082</a>
+    <a href="../html/PrivacyPolicy.html" style=color:white;>Privacy Policy</a>
+    <a href="mailto:maplebayconsulting@att.net" style=color:white;>maplebayconsulting@att.net</a>
+    <a href="tel:2485054082" style=color:white;>(248)-505-4082</a>
   </div>
 </html>
