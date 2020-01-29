@@ -34,17 +34,7 @@
         <a href="Overview.html">Who We Are</a>
         <a href="Overview.html#OurProcess">Our Process</a>
         <a href="Overview.html#OurServices">Our Services</a>
-        <a href="Overview.html#OurClients">Our Clients</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <a class="dropBtn" style="color:#f2f2f2;" href="AboutUs.html">About Us</a>
-      <div class="dropContent">
-        <a href="AboutUs.html">Company Overview</a>
-        <a href="AboutUs.html">Mission and Vision</a>
-        <a href="AboutUs.html#JoesBioAndExperience">Joes Bio And Experience</a>
-        <a href="AboutUs.html#ClientLocationsMap">Our Clients</a>
-        <a href="AboutUs.html#Testimonials">Testimonials</a>
+        <a href="Overview.html#Testimonials">Testimonials</a>
       </div>
     </div>
     <div class="dropdown">
@@ -70,7 +60,7 @@
       <a class="dropBtn" style="color:#f2f2f2;" href="ContactUs.html">Contact Us</a>
       <div class="dropContent">
         <a href="ContactUs.html">Contact Information</a>
-        <a href="ContactUs.html#Webform">Strategic Questionnaire</a>
+        <a href="ContactUs.html#Webform">Strategic Diagnosis</a>
       </div>
     </div>
   </div>
@@ -98,7 +88,7 @@
 
 
     <div class="header" id="Webform">
-      Strategic Questionnaire Webform
+      Strategic Diagnosis Webform
     </div>
     <p>Please choose Yes or No for each question. Answer these questions honestly and with your first reaction. Do not
       ponder. We are looking for a gut level response. Some questions are similar or repeat for a reason. We are looking
@@ -106,215 +96,229 @@
     </p>
     <form id="questionnaire" action="../php/results.php" method="POST">
 
-      <p>Please enter your full name and the name of your organization.</p>
-      <input id="userInfo" type="text" name="name" placeholder="Name"><br><br>
-      <input id="userInfo" type="text" name="org" placeholder="Organization"><br><br>
+      <ol>
 
-      <div class="question">
-        <p>1. Is your company in a field of crowded competitors?</p>
-        <input id="quizOptions" type="radio" name="q1" value="yes"> Yes <br><br>
-        <input id="quizOptions" type="radio" name="q1" value="no"> No <br><br>
-      </div>
+        <p>Please enter your full name and the name of your organization.</p>
+        <input id="userInfo" type="text" name="name" placeholder="Name"><br><br>
+        <input id="userInfo" type="text" name="org" placeholder="Organization"><br><br>
 
-      <div class="question">
-        <p>2. Do you need to find a new market to play in?</p>
-        <input id="quizOptions" type="radio" name="q2" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q2" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li> Is your company in a field of crowded competitors?</li><br>
+          <input id="quizOptions" type="radio" name="q1" value="yes"> Yes <br><br>
+          <input id="quizOptions" type="radio" name="q1" value="no"> No <br><br>
+        </div>
 
-      <div class="question">
-        <p>3. Is there a competitor with a siginificant advantage?</p>
-        <input id="quizOptions" type="radio" name="q3" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q3" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li> Do you need to find a new market to play in?</li><br>
+          <input id="quizOptions" type="radio" name="q2" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q2" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>4. Are there forces (social, legal, technical, regulatory, or demographic) over which you seem to have little
-          or no control that are forming your destiny?</p>
-        <input id="quizOptions" type="radio" name="q4" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q4" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is there a competitor with a siginificant advantage?</li><br>
+          <input id="quizOptions" type="radio" name="q3" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q3" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>5. Is there a scenario that quickly comes to mind where your organization grows exponentially?</p>
-        <input id="quizOptions" type="radio" name="q5" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q5" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Are there forces (social, legal, technical, regulatory, or demographic) over which you seem to have
+            little
+            or no control that are forming your destiny?</li><br>
+          <input id="quizOptions" type="radio" name="q4" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q4" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>6. Is there a scenario where your company quickly shrinks?</p>
-        <input id="quizOptions" type="radio" name="q6" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q6" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is there a scenario that quickly comes to mind where your organization grows exponentially?</li><br>
+          <input id="quizOptions" type="radio" name="q5" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q5" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>7. Do you know what your competitors are doing?</p>
-        <input id="quizOptions" type="radio" name="q7" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q7" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is there a scenario where your company quickly shrinks?</li><br>
+          <input id="quizOptions" type="radio" name="q6" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q6" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>8. Can you identify a smart, realistic, relatively fast way to gain a sustainable competitive advantage?</p>
-        <input id="quizOptions" type="radio" name="q8" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q8" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li> Do you know what your competitors are doing?</li><br>
+          <input id="quizOptions" type="radio" name="q7" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q7" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>9. Do you have the right people in the right jobs?</p>
-        <input id="quizOptions" type="radio" name="q9" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q9" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Can you quickly identify a smart, realistic, relatively fast way to gain a sustainable competitive
+            advantage?</li><br>
+          <input id="quizOptions" type="radio" name="q8" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q8" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>10. Do you constantly seek out new talent?</p>
-        <input id="quizOptions" type="radio" name="q10" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q10" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Do you have the right people in the right jobs?</li><br>
+          <input id="quizOptions" type="radio" name="q9" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q9" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>11. Does your company flawlessly execute for the customer?</p>
-        <input id="quizOptions" type="radio" name="q11" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q11" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Do you constantly seek out new talent?</li><br>
+          <input id="quizOptions" type="radio" name="q10" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q10" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>12. Do you regularly look for new partnerships, mergers, acquisitions that make you stronger?</p>
-        <input id="quizOptions" type="radio" name="q12" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q12" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Does your company flawlessly execute for the customer?</li><br>
+          <input id="quizOptions" type="radio" name="q11" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q11" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>13. Do you know what your core competency is?</p>
-        <input id="quizOptions" type="radio" name="q13" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q13" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Do you regularly look for new partnerships, mergers, acquisitions that make you stronger?</li><br>
+          <input id="quizOptions" type="radio" name="q12" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q12" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>14. Is there something that you are best in the world at?</p>
-        <input id="quizOptions" type="radio" name="q14" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q14" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Do you know what your core competency is?</li><br>
+          <input id="quizOptions" type="radio" name="q13" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q13" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>15. Is there something in your business you are passionate about?</p>
-        <input id="quizOptions" type="radio" name="q15" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q15" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is there something that you are best in the world at?</li><br>
+          <input id="quizOptions" type="radio" name="q14" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q14" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>16. Do you know what drives profit in your company?</p>
-        <input id="quizOptions" type="radio" name="q16" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q16" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is there something in your business you are passionate about?</li><br>
+          <input id="quizOptions" type="radio" name="q15" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q15" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>17. Do you know which products bring profit and which don't?</p>
-        <input id="quizOptions" type="radio" name="q17" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q17" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Do you know what drives profit in your company?</li><br>
+          <input id="quizOptions" type="radio" name="q16" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q16" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>18. Is operational excellence a focus?</p>
-        <input id="quizOptions" type="radio" name="q18" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q18" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Do you know which products bring profit and which don't?</li><br>
+          <input id="quizOptions" type="radio" name="q17" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q17" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>19. Is your company customer intimate?</p>
-        <input id="quizOptions" type="radio" name="q19" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q19" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is operational excellence a focus?</li><br>
+          <input id="quizOptions" type="radio" name="q18" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q18" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>20. Do you offer customers the best product possible by continuously innovating and pushing the boundaries of
-          performance?</p>
-        <input id="quizOptions" type="radio" name="q20" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q20" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is your company customer intimate?</li><br>
+          <input id="quizOptions" type="radio" name="q19" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q19" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>21. Does your company develop and maintain flawless operational execution?</p>
-        <input id="quizOptions" type="radio" name="q21" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q21" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Do you offer customers the best product possible by continuously innovating and pushing the boundaries
+            of
+            performance?</li><br>
+          <input id="quizOptions" type="radio" name="q20" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q20" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>22. Does your company have a performance-oriented culture and/or a work environment that is challenging,
-          satisfying, and fun?</p>
-        <input id="quizOptions" type="radio" name="q22" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q22" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Does your company have a clearly stated, focused strategy?</li><br>
+          <input id="quizOptions" type="radio" name="q21" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q21" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>23. Is your company organized (sales teams, production, functions, etc.) in the best way to acheive success?
-        </p>
-        <input id="quizOptions" type="radio" name="q23" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q23" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Does your company develop and maintain flawless operational execution?</li><br>
+          <input id="quizOptions" type="radio" name="q22" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q22" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>24. Are you innovative as a company?</p>
-        <input id="quizOptions" type="radio" name="q24" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q24" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Does your company have a performance-oriented culture and/or a work environment that is challenging,
+            satisfying, and fun?</li><br>
+          <input id="quizOptions" type="radio" name="q23" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q23" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>25. Do you attract and keep the best talent?</p>
-        <input id="quizOptions" type="radio" name="q25" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q25" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is your company organized (sales teams, production, functions, etc.) in the best way to acheive
+            success?
+          </li><br>
+          <input id="quizOptions" type="radio" name="q24" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q24" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>26. Is your company success driven by outstanding leadership?</p>
-        <input id="quizOptions" type="radio" name="q26" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q26" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Are you innovative as a company?</li><br>
+          <input id="quizOptions" type="radio" name="q25" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q25" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>27. Does your company make growth happen with mergers and partnerships?</p>
-        <input id="quizOptions" type="radio" name="q27" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q27" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Do you attract and keep the best talent?</li><br>
+          <input id="quizOptions" type="radio" name="q26" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q26" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>28. Does your company keep good metrics to measure success and performance?</p>
-        <input id="quizOptions" type="radio" name="q28" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q28" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is your company success driven by outstanding leadership?</li><br>
+          <input id="quizOptions" type="radio" name="q27" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q27" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>29. Does your strategic plan outline the best way to grow the business profitably?</p>
-        <input id="quizOptions" type="radio" name="q29" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q29" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Does your company make growth happen with mergers and partnerships?</li><br>
+          <input id="quizOptions" type="radio" name="q28" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q28" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>30. Can the business execute your strategy?</p>
-        <input id="quizOptions" type="radio" name="q30" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q30" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Does your company keep good metrics to measure success and performance?</li><br>
+          <input id="quizOptions" type="radio" name="q29" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q29" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>31. Is the short term and long term balanced in your strategy?</p>
-        <input id="quizOptions" type="radio" name="q31" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q31" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Does your strategic plan outline the best way to grow the business profitably?</li><br>
+          <input id="quizOptions" type="radio" name="q30" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q30" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>32. Do you have milestones for executing your strategic plan?</p>
-        <input id="quizOptions" type="radio" name="q32" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q32" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Can the business execute your strategy?</li>
+          <input id="quizOptions" type="radio" name="q31" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q31" value="no">No <br><br>
+        </div>
 
-      <div class="question">
-        <p>33. Are there linkages between people, operations and strategy to acheive your strategic plan?</p>
-        <input id="quizOptions" type="radio" name="q33" value="yes">Yes <br><br>
-        <input id="quizOptions" type="radio" name="q33" value="no">No <br><br>
-      </div>
+        <div class="question">
+          <li>Is the short term and long term balanced in your strategy?</li>
+          <input id="quizOptions" type="radio" name="q32" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q32" value="no">No <br><br>
+        </div>
 
-      <p>If you would like to see a copy of your questionnaire responses, please include your email below.</p>
-      <input id="userInfo" type="text" name="clientEmail" placeholder="Email"><br><br>
-      <input id="userInfo" type="submit" value="Submit"><br><br>
+        <div class="question">
+          <li>Do you have milestones for executing your strategic plan?</li><br>
+          <input id="quizOptions" type="radio" name="q33" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q33" value="no">No <br><br>
+        </div>
+
+        <div class="question">
+          <li>Are there linkages between people, operations and strategy to acheive your strategic plan?</li><br>
+          <input id="quizOptions" type="radio" name="q34" value="yes">Yes <br><br>
+          <input id="quizOptions" type="radio" name="q34" value="no">No <br><br>
+        </div>
+
+        <p>If you would like to see a copy of your questionnaire responses, please include your email below.</p>
+        <input id="userInfo" type="text" name="clientEmail" placeholder="Email"><br><br>
+        <input id="userInfo" type="submit" value="Submit"><br><br>
+
+      </ol>
 
     </form>
   </div>

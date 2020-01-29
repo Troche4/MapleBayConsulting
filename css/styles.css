@@ -63,7 +63,7 @@
     text-align: center;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    width: 20%;
+    width: 25%;
 }
 
 .dropBtn{
@@ -178,13 +178,16 @@ p {
     margin-left: 20%;
 }
 
-#questionnaire{
-    margin-left: 5%;
+#questionnaire li{
+    margin-left: 20%;
+    margin-right: 25%;
 }
 
 #questionnaire input{
     margin-left: 25%
 }
+
+
 
 figcaption{
     text-align: center;
@@ -258,3 +261,16 @@ and (max-device-width : 812px) {
         width: 1.5em;
     }
 }
+
+/* 
+
+saving this code for a later update 
+
+#HowWeSpendOurTime {
+    text-align: center;
+    background-image: url("../images/WorkspaceCropped.jpeg");
+    background-size: cover;
+    margin-right: 20%;
+}
+
+*/

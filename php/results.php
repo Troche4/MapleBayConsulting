@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml%22%3E">
 
 <head>
@@ -27,53 +27,43 @@
 </div>
 
 <body>
-  <div id="navbar">
-      <div class="dropdown">
-        <a class="dropBtn" style="color:#f2f2f2;" href="Overview.html">Overview</a>
-        <div class="dropContent">
-          <a href="Overview.html">Who We Are</a>
-          <a href="Overview.html#OurProcess">Our Process</a>
-          <a href="Overview.html#OurServices">Our Services</a>
-          <a href="Overview.html#OurClients">Our Clients</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a class="dropBtn" style="color:#f2f2f2;" href="AboutUs.html">About Us</a>
-        <div class="dropContent">
-          <a href="AboutUs.html">Company Overview</a>
-          <a href="AboutUs.html">Mission and Vision</a>
-          <a href="AboutUs.html#JoesBioAndExperience">Joes Bio And Experience</a>
-          <a href="AboutUs.html#ClientLocationsMap">Our Clients</a>
-          <a href="AboutUs.html#Testimonials">Testimonials</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a class="dropBtn" style="color:#f2f2f2;" href="OurProcess.html">Our Process</a>
-        <div class="dropContent">
-          <a href="OurProcess.html">How We Spend Our Time</a>
-          <a href="OurProcess.html">Process Visualization</a>
-          <a href="OurProcess.html">Strategic Planning</a>
-          <a href="OurProcess.html#GrowthAgenda">Growth Agenda</a>
-          <a href="OurProcess.html#FinancialTurnaround">Financial Turnaround</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a class="dropBtn" style="color:#f2f2f2;" href="OurServices.html">Our Services</a>
-        <div class="dropContent">
-          <a href="OurServices.html">Business Transition</a>
-          <a href="OurServices.html#TalentDevelopment">Talent Development</a>
-          <a href="OurServices.html#TeamBuilding">Team Building</a>
-          <a href="OurServices.html#StrategicPlanning">Strategic Planning</a>
-        </div>
-      </div>
-      <div class="dropdown">
-        <a class="dropBtn" style="color:#f2f2f2;" href="ContactUs.html">Contact Us</a>
-        <div class="dropContent">
-          <a href="ContactUs.html">Contact Information</a>
-          <a href="ContactUs.html#Webform">Strategic Questionnaire</a>
-        </div>
+  <div class="navbar">
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="Overview.html">Overview</a>
+      <div class="dropContent">
+        <a href="Overview.html">Who We Are</a>
+        <a href="Overview.html#OurProcess">Our Process</a>
+        <a href="Overview.html#OurServices">Our Services</a>
+        <a href="Overview.html#Testimonials">Testimonials</a>
       </div>
     </div>
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="OurProcess.html">Our Process</a>
+      <div class="dropContent">
+        <a href="OurProcess.html">How We Spend Our Time</a>
+        <a href="OurProcess.html">Process Visualization</a>
+        <a href="OurProcess.html">Strategic Planning</a>
+        <a href="OurProcess.html#GrowthAgenda">Growth Agenda</a>
+        <a href="OurProcess.html#FinancialTurnaround">Financial Turnaround</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="OurServices.html">Our Services</a>
+      <div class="dropContent">
+        <a href="OurServices.html">Business Transition</a>
+        <a href="OurServices.html#TalentDevelopment">Talent Development</a>
+        <a href="OurServices.html#TeamBuilding">Team Building</a>
+        <a href="OurServices.html#StrategicPlanning">Strategic Planning</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="dropBtn" style="color:#f2f2f2;" href="ContactUs.html">Contact Us</a>
+      <div class="dropContent">
+        <a href="ContactUs.html">Contact Information</a>
+        <a href="ContactUs.html#Webform">Strategic Diagnosis</a>
+      </div>
+    </div>
+  </div>
     <div class="header">
       Submission confirmed
     </div>
@@ -94,10 +84,10 @@
 
 
 <?php
-    $MBCMail = "roche.trey@gmail.com";
-    $MBCSubject = "Strategic Questionnaire Results: " .$_POST['name'] ." from " .$_POST['org'];
-    $clientSubject = "Maple Bay Consulting - Strategic Questionnaire results";
-    $MBCMessage = "Hi Joe, \n\nHere are the strategic questionnaire results for " .$_POST['name'] ." with " .$_POST['org'] .":\n\n"
+    $MBCMail = "maplebayconsulting@att.net";
+    $MBCSubject = "Strategic Diagnosis Results: " .$_POST['name'] ." from " .$_POST['org'];
+    $clientSubject = "Maple Bay Consulting - Strategic Diagnosis results";
+    $MBCMessage = "Hi Joe, \n\nHere are the strategic diagnosis results for " .$_POST['name'] ." with " .$_POST['org'] .":\n\n"
 
     ."1. Is your company in a field of crowded competitors?\n\t" .$_POST['q1'] ."\n"
 
@@ -207,37 +197,39 @@
 
     ."20. Do you offer customers the best product possible by continuously innovating and pushing the boundaries of performance?\n\t" .$_POST['q20'] ."\n"
 
-    ."21. Does your company develop and maintain flawless operational execution?\n\t" .$_POST['q21'] ."\n"
+    ."21. Does your company have a clearly stated, focused strategy?\n\t" .$_POST['q21'] ."\n"
 
-    ."22. Does your company have a performance-oriented culture and/or a work environment that is challenging, satisfying, and fun?\n\t" .$_POST['q22'] ."\n"
+    ."22. Does your company develop and maintain flawless operational execution?\n\t" .$_POST['q22'] ."\n"
 
-    ."23. Is your company organized (sales teams, production, functions, etc.) in the best way to acheive success?\n\t" .$_POST['q23'] ."\n"
+    ."23. Does your company have a performance-oriented culture and/or a work environment that is challenging, satisfying, and fun?\n\t" .$_POST['q23'] ."\n"
 
-    ."24. Are you innovative as a company?\n\t" .$_POST['q24'] ."\n"
+    ."24. Is your company organized (sales teams, production, functions, etc.) in the best way to acheive success?\n\t" .$_POST['q24'] ."\n"
 
-    ."25. Do you attract and keep the best talent?\n\t" .$_POST['q25'] ."\n"
+    ."25. Are you innovative as a company?\n\t" .$_POST['q25'] ."\n"
 
-    ."26. Is your company success driven by outstanding leadership?\n\t" .$_POST['q26'] ."\n"
+    ."26. Do you attract and keep the best talent?\n\t" .$_POST['q26'] ."\n"
 
-    ."27. Does your company make growth happen with mergers and partnerships?\n\t" .$_POST['q27'] ."\n"
+    ."27. Is your company success driven by outstanding leadership?\n\t" .$_POST['q27'] ."\n"
 
-    ."28. Does your company keep good metrics to measure success and performance?\n\t" .$_POST['q28'] ."\n"
+    ."28. Does your company make growth happen with mergers and partnerships?\n\t" .$_POST['q28'] ."\n"
 
-    ."29. Does your strategic plan outline the best way to grow the business profitably?\n\t" .$_POST['q29'] ."\n"
+    ."29. Does your company keep good metrics to measure success and performance?\n\t" .$_POST['q29'] ."\n"
 
-    ."30. Can the business execute your strategy?\n\t" .$_POST['q30'] ."\n"
+    ."30. Does your strategic plan outline the best way to grow the business profitably?\n\t" .$_POST['q30'] ."\n"
 
-    ."31. Is the short term and long term balanced in your strategy?\n\t" .$_POST['q31'] ."\n"
+    ."31. Can the business execute your strategy?\n\t" .$_POST['q31'] ."\n"
 
-    ."32. Do you have milestones for executing your strategic plan?\n\t" .$_POST['q32'] ."\n"
+    ."32. Is the short term and long term balanced in your strategy?\n\t" .$_POST['q32'] ."\n"
 
-    ."33. Are there linkages between people, operations and strategy to acheive your strategic plan?\n\t" .$_POST['q33'] ."\n";
+    ."33. Do you have milestones for executing your strategic plan?\n\t" .$_POST['q33'] ."\n"
+
+    ."34. Are there linkages between people, operations and strategy to acheive your strategic plan?\n\t" .$_POST['q34'] ."\n";
 
     if ($_POST['clientEmail'] == '') {
-        echo "Hi ".$_POST['name'] ."!  We have recieved your submission. Thank you for taking the Strategic Questionnaire.";
+        echo "<p>Hi ".$_POST['name'] ."!  We have recieved your submission. Thank you for completing the Strategic Diagnosis.</p>";
     }
     else {
-        echo "Hi ".$POST['name'] ."!  We have recieved your submission! Your results will be emailed to you at " .$_POST['clientEmail'] .".  Thank you for taking the Strategic Questionnaire.";
+        echo "<p>Hi ".$POST['name'] ."!  We have recieved your submission! Your results will be emailed to you at " .$_POST['clientEmail'] .".  Thank you for taking the Strategic Questionnaire.<p>";
         mail($_POST['clientEmail'], $clientSubject, $clientMessage, "-f$maplebayconsulting@att.net");
     }
     mail($MBCMail, $MBCSubject, $MBCMessage);
@@ -245,6 +237,7 @@
 
 
 <html>
+  <br><br><br><br>
   <div id=footer>
     <a href="../html/PrivacyPolicy.html" style=color:white;>Privacy Policy</a>
     <a href="mailto:maplebayconsulting@att.net" style=color:white;>maplebayconsulting@att.net</a>
