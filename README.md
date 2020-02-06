@@ -9,9 +9,7 @@ Features include:
 * A sticky navbar with dropdown menus 
 * A questionnaire webform
 
-Currently hosted at: treyroche.com
-
-When finished, this repo will replace the existing code for maplebayconsulting.com.
+Currently hosted at: maplebayconsulting.com
 
 Before:
 ![Before](/images/before.png)
