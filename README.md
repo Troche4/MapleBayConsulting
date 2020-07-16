@@ -9,7 +9,7 @@ Features include:
 * A sticky navbar with dropdown menus 
 * A questionnaire webform
 
-Currently hosted at [maplebayconsulting.com]
+Website hosted [here] (www.maplebayconsulting.com)
 
 Before:
 ![Before](/images/before.png)
