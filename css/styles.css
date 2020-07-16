@@ -1,5 +1,6 @@
 .welcomePageBody, .welcomePageHTML{
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .heroImage {
@@ -260,6 +261,17 @@ and (max-device-width : 812px) {
         height: 1.5em;
         width: 1.5em;
     }
+}
+
+#Communicator {
+    position: absolute;
+    top: 70%;
+    left: 43%;
+    align-items: center;
+    background-color: #00003d;
+    border: none;
+    border-radius: 1%;
+    color:#f2f2f2;
 }
 
 /* 
