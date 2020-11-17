@@ -263,10 +263,11 @@ and (max-device-width : 812px) {
     }
 }
 
-#Communicator {
+#Featured {
     position: absolute;
     top: 70%;
-    left: 43%;
+    left: 40%;
+    width: 20%;
     align-items: center;
     background-color: #00003d;
     border: none;
