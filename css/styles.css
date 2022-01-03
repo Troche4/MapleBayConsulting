@@ -1,6 +1,10 @@
 .welcomePageBody, .welcomePageHTML{
-    height: 100%;
-    width: 100%
+    height: calc(100vh);
+    width: calc(100vw);
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .heroImage {
@@ -32,7 +36,6 @@
 .logo {
     padding: 3%;
     margin-left: 4%;
-    margin-right: 10%;
     width: 35%;
     padding-top: 5%;
 }
@@ -40,7 +43,7 @@
 .navbar{
     background-color: white;
     padding: 0%;
-    width: 100%;
+    width: inherit;
 }
 
 .sticky {
@@ -274,16 +277,3 @@ and (max-device-width : 812px) {
     border-radius: 1%;
     color:#f2f2f2;
 }
-
-/* 
-
-saving this code for a later update 
-
-#HowWeSpendOurTime {
-    text-align: center;
-    background-image: url("../images/WorkspaceCropped.jpeg");
-    background-size: cover;
-    margin-right: 20%;
-}
-
-*/
